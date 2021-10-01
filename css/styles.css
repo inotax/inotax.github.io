@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/* common */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: serif;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  margin: 24px 56px 5px;
+}
+
+header h1 {
+  display: inline;
+}
+
+header ul {
+  list-style: none;
+  float: right;
+}
+
+header li {
+  display: block;
+  float: left;
+  padding-left: 24px;
+  margin-top: 10px;
+}
+
+header a.disabled {
+  pointer-events: none;
+}
+
+/* main */
+
+.leaves {
+  position: relative;
+}
+
+.leaves > img {
+  width: 100%;
+  opacity: .3;
+}
+
+.mylogo > img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 175px;
+  left: 60px;
+}
+
+.hobby ul {
+  list-style-position: inside;
+}
+
+.myself {
+  position: relative;
+}
+
+.self {
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 5px;
+}
+
+.self h1 {
+  padding: 10px 0 0 10px;
+  font-weight: normal;
+}
+
+.self span {
+  color: blueviolet;
+}
+
+.self p {
+  padding: 0 10px;
+}
+
+.self2 {
+  margin-bottom: 10px;
+}
+
+.self ul {
+  padding: 0 0 10px 10px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  margin: 24px 0;
+}
+
+/* mediaquery */
+
