@@ -5,18 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>執筆活動一覧</title>
   <link rel="icon" href="../img/logo.ico" >
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="novel/style-novel.css">
 </head>
 <body>
   <div class="container">
     <header>
       <h1>自作小説</h1>
-      <ul>
+      <ul class="menu">
         <li><a href="../index.html">About</a></li>
         <li><a href="#" class="disabled">Novel</a></li>
         <li><a href="../favorite/index.html">Favorite</a></li>
       </ul>
+
+      <div class="sp-menu">
+        <span class="material-icons" id="open">menu</span>
+      </div>
     </header>
+
+    <div class="overlay">
+      <span class="material-icons hide" id="close">close</span>
+      <nav>
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="#" class="disabled">Novel</a></li>
+          <li><a href="../favorite/index.html">Favorite</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
       <div class="mynovel">
@@ -46,5 +63,7 @@
       <p>&copy; イノタックス</p>
     </footer>
   </div>
+
+  <script src="../js/main.js"></script>
 </body>
 </html>

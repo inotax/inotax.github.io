@@ -5,18 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お気に入り一覧</title>
   <link rel="icon" href="../img/logo.ico" >
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="favorite/style-favorite.css">
 </head>
 <body>
   <div class="container">
     <header>
       <h1>お気に入り一覧</h1>
-      <ul>
+      <ul class="menu">
         <li><a href="../index.html">About</a></li>
         <li><a href="../novel/index.html">Novel</a></li>
         <li><a href="#" class="disabled">Favorite</a></li>
       </ul>
+
+      <div class="sp-menu">
+        <span class="material-icons" id="open">menu</span>
+      </div>
     </header>
+
+    <div class="overlay">
+      <span class="material-icons hide" id="close">close</span>
+      <nav>
+        <ul>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../novel/index.html">Novel</a></li>
+          <li><a href="#" class="disabled">Favorite</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
       <div class="myfavorite">
@@ -30,7 +47,7 @@
           <h1><span>F</span>avorite</h1>
           <p>お気に入りのアーティスト一覧です。とりあえず順不同。</p>
           <p class="favorite2">ひとまずミュージシャンだけ。</p>
-          <div class="favorite3">
+          <div class="favorite3 favorite3-1">
             <p>好きなアーティスト(殿堂入り)</p>
             <ul>
               <li>平沢進</li>
@@ -38,7 +55,7 @@
               <li>フジファブリック</li>
             </ul>
           </div>
-          <div class="favorite3">
+          <div class="favorite3 favorite3-2">
             <p>最近好きなアーティスト(2021年現在)</p>
             <ul>
               <li>ズーカラデル</li>
@@ -54,5 +71,7 @@
       <p>&copy; イノタックス</p>
     </footer>
   </div>
+
+  <script src="../js/main.js"></script>
 </body>
 </html>
